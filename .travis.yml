@@ -9,7 +9,6 @@ python:
 - '3.5'
 - '3.6'
 - pypy
-- pypy3
 before_install:
   - pip install coveralls
 install:
@@ -18,7 +17,6 @@ install:
 - sudo apt-get update
 - sudo apt-get install -y libzmq3-dev
 - pip install -U pip
-- pip install riemann-client
 - pip install cython
 - cython logbook/_speedups.pyx
 env:
